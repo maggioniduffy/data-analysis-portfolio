@@ -1,0 +1,43 @@
+OJA
+5000 epocas
+0.0001 eta
+
+weight: vector random entre -1 y 1
+	de len(data[0])
+w = []
+w.append(weight)
+
+for epochs:
+	for N:
+		por c pais multiplica sus atributos por un atributo correspondiente de w
+		updatea peso segun pais (regla de oja)
+		
+el ultimo weight es el autovector
+first comp = np.matmul(data * autovector)
+
+HOPFIELD
+cargo alfabeto
+otro vector con las letras
+de las 25 letras q hay elijo 4 random
+	pueden ser ortogonales o no
+agarro los pesos
+	me fijo si i == j => 0
+		y si no la cuenta q estaba en la teoria ( la sumatoria _ y se lo asigno a ij i ji
+		
+		agarro un patron random
+		Agarro 1 de las 4
+		ruido
+			parametro
+		guardo el estado previo y el actual, previo es el q tiene ruido
+			el actual es ceros y lo actualizo por cada elemento, actualizo los pesos
+			imrpimo pasos intermedios,
+			actualizo el estado del actual
+			si = salgo,
+			si no prev = actual,
+			y actual = 0s
+			si ya sale 
+despues comparo actual con el original
+repasar teoria
+
+ruido y ortogonal => se rompe
+ruido y no ortogonal => por ahi anda
